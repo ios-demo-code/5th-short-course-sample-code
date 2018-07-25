@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LocalizedDemo
+
+  Created by Soeng Saravit on 7/6/18.
+  Copyright © 2018 Soeng Saravit. All rights reserved.
+*/
+"welcome" = "សូមស្វាគមន៌មកកាន់ការបង្រៀន";
+"home" = "ទំព័រដើម";
+"setting" = "ការកំណត់";
+"title-button" = "ផ្លាស់ប្តូរភាសា";

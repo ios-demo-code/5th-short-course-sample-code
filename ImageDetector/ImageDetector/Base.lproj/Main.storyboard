@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageDetector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="63p-Ch-9ZY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="63p-Ch-9ZY" secondAttribute="height" multiplier="375:247" id="Jfx-pk-W4U"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCM-zD-V5u">
+                                <rect key="frame" x="16" y="280" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGb-OW-eD6">
+                                <rect key="frame" x="16" y="314" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kij-eS-vd5"/>
+                                </constraints>
+                                <state key="normal" title="Pick another image"/>
+                                <connections>
+                                    <action selector="pickImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ynf-gs-uh3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="63p-Ch-9ZY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2qt-aZ-QFV"/>
+                            <constraint firstItem="63p-Ch-9ZY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3xw-Go-NHm"/>
+                            <constraint firstItem="gGb-OW-eD6" firstAttribute="top" secondItem="xCM-zD-V5u" secondAttribute="bottom" constant="34" id="7yA-13-zgG"/>
+                            <constraint firstItem="xCM-zD-V5u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9mI-nG-cSf"/>
+                            <constraint firstItem="xCM-zD-V5u" firstAttribute="top" secondItem="63p-Ch-9ZY" secondAttribute="bottom" constant="33" id="BP4-lO-Vrw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xCM-zD-V5u" secondAttribute="trailing" constant="16" id="De9-SO-qTZ"/>
+                            <constraint firstItem="63p-Ch-9ZY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TxW-rc-mdo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gGb-OW-eD6" secondAttribute="trailing" constant="16" id="VVx-sT-SIl"/>
+                            <constraint firstItem="gGb-OW-eD6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="X1Z-9M-IvM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgeView" destination="63p-Ch-9ZY" id="6WF-vY-SAB"/>
+                        <outlet property="resultLabel" destination="xCM-zD-V5u" id="DTs-En-cCi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default" width="400" height="400"/>
+    </resources>
+</document>

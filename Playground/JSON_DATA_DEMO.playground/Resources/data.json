@@ -1,0 +1,15 @@
+{
+    "title":"JSON Tutorial",
+    "swiftVersion":4.0,
+    "users":[
+        {
+             "name":"Dara",
+             "age":29
+        },
+             
+        {
+             "name":"Heng",
+             "age":20
+        }
+    ]
+}

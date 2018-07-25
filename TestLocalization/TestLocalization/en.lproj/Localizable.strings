@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TestLocalization
+
+  Created by Soeng Saravit on 7/6/18.
+  Copyright © 2018 Soeng Saravit. All rights reserved.
+*/
+"welcome" = "Welcome to Localization ";
+"home" = "Home";
+"setting" = "Setting";
+"change-button" = "Change Languages";
+

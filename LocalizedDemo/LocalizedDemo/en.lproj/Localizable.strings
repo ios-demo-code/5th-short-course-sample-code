@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LocalizedDemo
+
+  Created by Soeng Saravit on 7/6/18.
+  Copyright © 2018 Soeng Saravit. All rights reserved.
+*/
+"welcome" = "Welcome to tutorial";
+"home" = "Home";
+"setting" = "Setting";
+"title-button" = "Change Language";

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LocalizationDemoApp
+
+  Created by Soeng Saravit on 7/5/18.
+  Copyright © 2018 Soeng Saravit. All rights reserved.
+*/
+"welcome" = "ស្វាគមន៍មកការបង្រៀន Localization";
+"change-button" = "ផ្លាស់ប្ដូរភាសា";
+"home" = "ទំព័រដើម";
+"setting" = "ការកំណត់";
